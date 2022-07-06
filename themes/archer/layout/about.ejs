@@ -1,0 +1,20 @@
+<!-- 不可以删除，否则会调用post的layout  -->
+<main class="main about-page">
+    <article class="article-entry">
+        <%- page.content %>
+    </article>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+     <!-- 评论插件 -->
+    <%- partial('_partial/comment/livere') %>
+    <%- partial('_partial/comment/disqus') %>
+    <%- partial('_partial/comment/gitment') %>
+    <!-- partial('_partial/comment/changyan') -->
+    <%- partial('_partial/comment/youyan') %>
+    <%- partial('_partial/comment/custom') %>
+    <%- partial('_partial/comment/valine') %>
+    <!-- 评论 -->
+</main>
